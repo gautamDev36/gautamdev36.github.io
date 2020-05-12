@@ -1,5 +1,5 @@
-# gautamdev36.github.io
-<!DOCTYPE html>
+# About me
+
 <html>
 	<head>
 		<title>About Me : Gautam Dev</title>
