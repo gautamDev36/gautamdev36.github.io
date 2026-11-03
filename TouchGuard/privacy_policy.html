@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TouchGuard: Anti-Theft & App Lock</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 2em; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; background-color: #f9f9f9; }
+        .container { background: #fff; padding: 2.5em; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h1, h2 { color: #2c3e50; }
+        h1 { border-bottom: 2px solid #3498db; padding-bottom: 0.3em; }
+        h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-top: 1.5em; }
+        p, li { margin: 1em 0; }
+        ul { padding-left: 1.5em; }
+        li { margin: 0.5em 0; }
+        .permission-box { background: #f1f8ff; border-left: 4px solid #3498db; padding: 1em; margin: 1em 0; border-radius: 4px; }
+        .footer { margin-top: 3em; font-size: 0.9em; color: #7f8c8d; border-top: 1px solid #eee; padding-top: 1em; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>App Name:</strong> TouchGuard: Anti-Theft & App Lock</p>
+    <p><strong>Developer:</strong> YajuDevStudio</p>
+    <p><strong>Effective Date:</strong> July 17, 2026</p>
+
+    <p>YajuDevStudio built the <strong>TouchGuard</strong> app as a security, anti-theft, and privacy utility. This SERVICE is provided by YajuDevStudio at no cost and is intended for use as is.</p>
+    <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
+
+    <h2>1. Core Offline-First Architecture & Data Privacy</h2>
+    <p><strong>TouchGuard's core anti-theft, motion detection, and app locking features are designed with an Offline-First architecture.</strong></p>
+    <p>All your security settings, PIN codes, application lockdown configurations, activity logs, and local device triggers are processed and stored exclusively on your local device. Core security data never leaves your device.</p>
+
+    <h2>2. Detailed Explanation of Android Permissions</h2>
+    <p>To provide robust anti-theft protection and app locking, TouchGuard requests certain sensitive system permissions. In compliance with Google Play Developer Policies, here is why each permission is required and how it is used:</p>
+
+    <div class="permission-box">
+        <p><strong>1. Usage Access / Package Usage Stats (<code>android.permission.PACKAGE_USAGE_STATS</code>)</strong></p>
+        <p><em>Purpose:</em> Required for the <strong>App Guard</strong> feature. This permission allows TouchGuard to detect which foreground application is currently running, enabling the app locker to instantly protect and lock sensitive applications from unauthorized access.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>2. Display Over Other Apps / System Alert Window (<code>android.permission.SYSTEM_ALERT_WINDOW</code>)</strong></p>
+        <p><em>Purpose:</em> Required to display lock screens and security trap overlays instantly on top of protected applications whenever an unauthorized user attempts to open them.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>3. Camera & Microphone (<code>android.permission.CAMERA</code>, <code>android.permission.RECORD_AUDIO</code>)</strong></p>
+        <p><em>Purpose:</em> Used locally on your device for security features such as capturing intruder snapshots during unauthorized touch/motion alarms, or analyzing acoustic sound patterns (such as clap detection via local MediaPipe models) to locate your phone or trigger anti-theft alarms.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>4. Biometric Authentication (<code>android.permission.USE_BIOMETRIC</code>)</strong></p>
+        <p><em>Purpose:</em> Enables you to securely unlock protected apps and settings using your device fingerprint or facial recognition.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>5. Foreground Services (<code>android.permission.FOREGROUND_SERVICE</code>, <code>android.permission.FOREGROUND_SERVICE_SPECIAL_USE</code>, <code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code>)</strong></p>
+        <p><em>Purpose:</em> Required to run continuous anti-theft monitoring services (motion detection, pocket sensor, USB charger disconnection alerts, and clap detector) reliably in the background while your device is locked or screen is off.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>6. Boot Completed (<code>android.permission.RECEIVE_BOOT_COMPLETED</code>)</strong></p>
+        <p><em>Purpose:</em> Automatically restarts your active security protection shields when your device reboots so your security is never disabled unexpectedly.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>7. Notifications (<code>android.permission.POST_NOTIFICATIONS</code>)</strong></p>
+        <p><em>Purpose:</em> Displays active security status notifications and warning alerts when security breaches or motion detections occur.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>8. Wake Lock & Vibration (<code>android.permission.WAKE_LOCK</code>, <code>android.permission.VIBRATE</code>)</strong></p>
+        <p><em>Purpose:</em> Wakes up the device screen and triggers haptic vibrations during security alarms and breach alerts.</p>
+    </div>
+
+    <h2>3. Third-Party Services, Ads, & Firebase Integration</h2>
+    <p>While core security functions operate locally offline, the app may integrate trusted third-party services (such as Google AdMob and Firebase) to support advertisements, crash diagnostics, and cloud messaging:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Used to display advertisements. AdMob may collect and use certain data (such as device identifiers and IP addresses) to serve personalized or non-personalized ads. You can manage your ad personalization settings through your Google/Android device settings.</li>
+        <li><strong>Firebase Analytics & Crashlytics:</strong> Used to collect anonymous diagnostic data, crash reports, and app performance metrics to help us identify bugs and improve app stability.</li>
+        <li><strong>Firebase Cloud Messaging (FCM):</strong> Used for delivering secure push notifications or service updates.</li>
+    </ul>
+    <p>Link to third-party privacy policies:</p>
+    <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">Google AdMob</a></li>
+        <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Firebase Analytics & Crashlytics</a></li>
+    </ul>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>TouchGuard does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. These changes are effective immediately after they are posted on this page.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, suggestions, or privacy concerns regarding TouchGuard, do not hesitate to contact us at <strong>gautam.dev36@gmail.com</strong>.</p>
+
+    <div class="footer">
+        Last updated: July 17, 2026 | YajuDevStudio
+    </div>
+</div>
+</body>
+</html>
