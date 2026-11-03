@@ -56,21 +56,26 @@
 
     <div class="permission-box">
         <p><strong>5. Foreground Services (<code>android.permission.FOREGROUND_SERVICE</code>, <code>android.permission.FOREGROUND_SERVICE_SPECIAL_USE</code>, <code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code>)</strong></p>
-        <p><em>Purpose:</em> Required to run continuous anti-theft monitoring services (motion detection, pocket sensor, USB charger disconnection alerts, and clap detector) reliably in the background while your device is locked or screen is off.</p>
+        <p><em>Purpose:</em> Required to run continuous anti-theft monitoring services (motion detection, pocket sensor, USB charger disconnection alerts, and clap detector) reliably in the background while your device is locked or screen is off, accompanied by an ongoing perceptible notification.</p>
     </div>
 
     <div class="permission-box">
-        <p><strong>6. Boot Completed (<code>android.permission.RECEIVE_BOOT_COMPLETED</code>)</strong></p>
+        <p><strong>6. Full-Screen Intent (<code>android.permission.USE_FULL_SCREEN_INTENT</code>)</strong></p>
+        <p><em>Purpose:</em> Required for core anti-theft alarms and security lockscreens. This permission allows TouchGuard to instantly wake your device screen and present high-priority emergency sirens or security lock overlays over the lockscreen when an anti-theft sensor is breached or an unauthorized user attempts to open a guarded app.</p>
+    </div>
+
+    <div class="permission-box">
+        <p><strong>7. Boot Completed (<code>android.permission.RECEIVE_BOOT_COMPLETED</code>)</strong></p>
         <p><em>Purpose:</em> Automatically restarts your active security protection shields when your device reboots so your security is never disabled unexpectedly.</p>
     </div>
 
     <div class="permission-box">
-        <p><strong>7. Notifications (<code>android.permission.POST_NOTIFICATIONS</code>)</strong></p>
+        <p><strong>8. Notifications (<code>android.permission.POST_NOTIFICATIONS</code>)</strong></p>
         <p><em>Purpose:</em> Displays active security status notifications and warning alerts when security breaches or motion detections occur.</p>
     </div>
 
     <div class="permission-box">
-        <p><strong>8. Wake Lock & Vibration (<code>android.permission.WAKE_LOCK</code>, <code>android.permission.VIBRATE</code>)</strong></p>
+        <p><strong>9. Wake Lock & Vibration (<code>android.permission.WAKE_LOCK</code>, <code>android.permission.VIBRATE</code>)</strong></p>
         <p><em>Purpose:</em> Wakes up the device screen and triggers haptic vibrations during security alarms and breach alerts.</p>
     </div>
 
